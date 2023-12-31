@@ -11,4 +11,12 @@ document.addEventListener ("keydown", function (e) {
     } else if (e.key === "3") {
         box3.innerText = "🔥";
     }
-})
+});
+
+var clearButton = document.querySelector("button");
+
+clearButton.addEventListener ("click", function () {
+    box1.innerText = "1";
+    box2.innerText = "2";
+    box3.innerText = "3";
+});
